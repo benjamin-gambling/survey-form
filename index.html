@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"><strong><u>CODEVID-19</u></strong></h1>
+    <p id="description" class="description text-center">
+      During these crazy and uncertain times, many people either have a lot more time on their hands or have resorted to working/learning from home. This has prompted a surge in online learning from people killing time to people taking a huge U-turn in career aspirations and looking at gaining new skills to become more self-reliant.
+  <br>
+  <br>
+      Computer programming and web development is a broad field and has a lot of opportunities for individuals to work remotely and on their own schedule. This short survey is aimed to collect information from a wide range of skill levels and hopefully provide some clarity and guidance to lower level programmers to help them on their journey.</p>
+  </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required
+             />
+      </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your Email"
+             required
+             />
+      </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input
+             type="number"
+             name="age"
+             id="number"
+             min="4"
+             max="120"
+             class="form-control"
+             placeholder="Age"
+             />
+      </div>
+    
+    <div class="form-group">
+      <p>What’s your current situation?</p>
+      <select id"dropdown" name="role" class"from-control" required>
+      <option disabled selected value>Select your current situation</option>
+      <option value="unemployed">Unemployed</option>
+      <option value="job">Full Time Worker</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="self">Self-Employed/Freelancing</option>
+      <option value="prefernot">Prefer not to say</option>
+      <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>How much experience do you have coding?</p>
+      <select id="dropdown" name="exp" class"from-control" required>
+      <option disabled selected value>Select your experience level</option>
+      <option value="none">None</option>
+      <option value="some">Some</option>
+      <option value="selfTaught">Self-Taught</option>
+      <option value="col">College/University Education</option>
+      <option value="junior">Junior Developer</option>
+      <option value="senior">Senior Developer</option>
+      <option value="god">God</option>
+      </select>
+    </div>
+  
+  <div class="form-group">
+      <p>Did you start your coding journey with freeCodeCamp?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+               />Yes</label>
+          <label>
+        <input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+          checked
+               />No</label>
+    </div>
+  
+  <div class="form-group">
+       <p>What other resoruces have you used and would recommend to fellow coders?<span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input
+               name="recommend"
+               value="grasshopper"
+               type="checkbox"
+               class="input-checkbox"
+               />Grasshopper</label>
+        <label>
+        <input
+               name="recommend"
+               value="soloLearn"
+               type="checkbox"
+               class="input-checkbox"
+               />SoloLearn</label>
+          <label>
+        <input
+               name="recommend"
+               value="coursera"
+               type="checkbox"
+               class="input-checkbox"
+               />Coursera</label>
+            <label>
+        <input
+               name="recommend"
+               value="udemy"
+               type="checkbox"
+               class="input-checkbox"
+               />Udemy</label>
+              <label>  
+        <input
+               name="recommend"
+               value="udacity"
+               type="checkbox"
+               class="input-checkbox"
+               />Udacity</label>
+                <label>        
+        <input
+               name="recommend"
+               value="codecademy"
+               type="checkbox"
+               class="input-checkbox"
+               />Codecademy</label>            
+                  <label>
+        <input
+               name="recommend"
+               value="grasshopper"
+               type="checkbox"
+               class="input-checkbox"
+               />Grasshopper</label>
+                  <label>
+        <input
+               name="recommend"
+               value="treehouse"
+               type="checkbox"
+               class="input-checkbox"
+               />Treehouse</label>
+    <label>
+     <input
+               name="recommend"
+               value="other"
+               type="checkbox"
+               class="input-checkbox"
+               />Other<label>
+                  
+                    
+        </div>
+            
+        <div class="form-group">
+          <p>Which programming languages do you know or are currently learning?<br><span class="clue">(Please note down what resource you used to learn these language)</span></p>
+          <textarea
+                    id="languages"
+                    class="input-textarea1"
+                    name="languages"
+                    placeholder="Example: JavaScript - GrassHopper"
+                    ></textarea>
+           </div>
+                      
+           <div class="form-group">
+             <p>Please include your 'Pro Coding Tips'<br><span class="clue">(Basically include anything you wish you knew about when you were starting out, this could be advice, websites or any other resources)</span></p>
+          <textarea
+                    id="comments"
+                    class="input-textarea2"
+                    name="comments"
+                    placeholder="Enter your comment here..."
+                    ></textarea>
+           </div>
+                    
+           <div class="form-group">
+             <button type="submit" id="submit" class="submit-button">
+               <strong>SUBMIT</strong>
+             </button>
+          </div>
+       </form>
+     </div>
+</body>
+<html>
